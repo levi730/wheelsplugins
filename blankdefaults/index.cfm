@@ -16,7 +16,22 @@
 
 <h2>How to Use</h2>
 
-<p>Install it! Then the new method is automatically available to you.</p>
+<p>
+  Install it! Then the new method is automatically available to you.
+</p>
+
+<p>
+  The primary target for this functionality is the model method <code>new()</code>.  You will probably see no changes in 
+behavior unless you set the <code>defaults</code> parameter to the <code>new()</code> method.  This can be done for all calls to 
+<code>new()</code> by adding the following to your settings file:
+</p>
+
+<p><code>&lt;cfset set(functionName="new", defaults=true)&gt;</code></p>
+
+<p>
+  See the <a href="http://cfwheels.org/docs/chapter/configuration-and-defaults">Configuration and Defaults</a> page of the 
+Wheels documentation for more info.
+</p>
 
 <h2>Uninstallation</h2>
 
